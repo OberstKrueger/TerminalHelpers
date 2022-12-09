@@ -9,4 +9,7 @@ struct Arguments: ParsableArguments {
 
     @Option(name: .customShort("r"), help: "How many times to randomize the number.")
     var count: Int = 1
+
+    @Flag(name: .customShort("s"), help: "Sort the output in numerical order from lowest to highest.")
+    var sort: Bool = false
 }
