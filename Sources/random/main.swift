@@ -34,15 +34,4 @@ if arguments.sort {
 
         print(random)
     }
-    var random: [UInt] = []
-
-    for _ in 1...arguments.count {
-        random.append(UInt.random(in: first...second))
-    }
-
-    random.sort()
-
-    for number in random {
-        print(number)
-    }
 }
