@@ -1,7 +1,10 @@
+import Foundation
+
 let first: UInt
 let second: UInt
 
 let arguments = Arguments.parseOrExit()
+var results: [UInt] = []
 
 switch (arguments.first, arguments.second) {
 case (.some(let f), .none):
@@ -15,23 +18,24 @@ default:
     second = 10
 }
 
+if arguments.unique && (second - first + 1) < arguments.count {
+    print("More unique numbers requested than the range provided.")
+    print("Requested: \(arguments.count), Range: \(first)-\(second)")
+    exit(EXIT_FAILURE)
+}
+
+while results.count < arguments.count {
+    let random = UInt.random(in: first...second)
+
+    if arguments.unique == false || results.contains(random) == false {
+        results.append(random)
+    }
+}
+
 if arguments.sort {
-    var random: [UInt] = []
+    results.sort()
+}
 
-    for _ in 1...arguments.count {
-        random.append(UInt.random(in: first...second))
-    }
-
-    random.sort()
-
-    for number in random {
-        print(number)
-    }
-
-} else {
-    for _ in 1...arguments.count {
-        let random: UInt = UInt.random(in: first...second)
-
-        print(random)
-    }
+results.forEach {
+    print($0)
 }

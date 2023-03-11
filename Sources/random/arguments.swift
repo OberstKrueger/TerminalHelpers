@@ -12,4 +12,7 @@ struct Arguments: ParsableArguments {
 
     @Flag(name: .customShort("s"), help: "Sort the output in numerical order from lowest to highest.")
     var sort: Bool = false
+
+    @Flag(name: .customShort("u"), help: "Whether results must be unique.")
+    var unique: Bool = false
 }
