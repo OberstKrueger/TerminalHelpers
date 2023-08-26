@@ -6,7 +6,7 @@ let package = Package(
     name: "TerminalHelpers",
     platforms: [.macOS(.v13)],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser.git", exact: "1.2.2")
+        .package(url: "https://github.com/apple/swift-argument-parser.git", exact: "1.2.3")
     ],
     targets: [
         .executableTarget(
