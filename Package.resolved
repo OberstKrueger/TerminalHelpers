@@ -1,6 +1,15 @@
 {
   "pins" : [
     {
+      "identity" : "okterminalcolors",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/OberstKrueger/OKTerminalColors",
+      "state" : {
+        "revision" : "1e78010f0f07a8224d97d72d216f222afafdcd55",
+        "version" : "0.2.0"
+      }
+    },
+    {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
