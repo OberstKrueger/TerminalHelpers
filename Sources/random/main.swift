@@ -25,7 +25,7 @@ if arguments.unique && (second - first + 1) < arguments.count {
 }
 
 while results.count < arguments.count {
-    let random = UInt.random(in: first...second)
+    let random = UInt.random(in: min(first, second)...max(first, second))
 
     if arguments.unique == false || results.contains(random) == false {
         results.append(random)
