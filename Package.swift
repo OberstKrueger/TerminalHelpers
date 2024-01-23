@@ -12,7 +12,10 @@ let package = Package(
     targets: [
         .executableTarget(
             name: "mchecker",
-            dependencies: ["OKTerminalColors"]
+            dependencies: [
+                .product(name: "OKTerminalColors", package: "OKTerminalColors"),
+                .product(name: "ArgumentParser", package: "swift-argument-parser")
+            ]
         ),
         .executableTarget(
             name: "random",

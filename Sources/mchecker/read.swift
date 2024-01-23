@@ -1,6 +1,6 @@
 import iTunesLibrary
 
-func newRead() -> [String: [String: Int]] {
+func read(filter: String?) -> [String: [String: Int]] {
     let library = try! ITLibrary(apiVersion: "1.0", options: .lazyLoadData)
 
     var music: [String: [String: Int]] = [:]
@@ -10,10 +10,12 @@ func newRead() -> [String: [String: Int]] {
         let genre = song.genre
         let year = song.year
 
-        let check = music[genre, default: [:]][artist, default: Int.max]
+        if genre == filter {
+            let check = music[genre, default: [:]][artist, default: Int.max]
 
-        if year < check {
-            music[genre, default: [:]][artist] = year
+            if year < check {
+                music[genre, default: [:]][artist] = year
+            }
         }
     }
 
