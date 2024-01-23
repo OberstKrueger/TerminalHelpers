@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/OberstKrueger/OKTerminalColors",
       "state" : {
-        "revision" : "1e78010f0f07a8224d97d72d216f222afafdcd55",
-        "version" : "0.2.0"
+        "revision" : "111c00af450c6c8b493c608c57a69f9d0d6fa95c",
+        "version" : "1.0.0"
       }
     },
     {

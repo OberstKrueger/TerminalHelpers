@@ -7,7 +7,7 @@ let package = Package(
     platforms: [.macOS(.v13)],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser.git", exact: "1.2.3"),
-        .package(url: "https://github.com/OberstKrueger/OKTerminalColors", exact: "0.2.0")
+        .package(url: "https://github.com/OberstKrueger/OKTerminalColors", exact: "1.0.0")
     ],
     targets: [
         .executableTarget(
