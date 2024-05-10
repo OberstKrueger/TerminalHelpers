@@ -1,7 +1,7 @@
 import OKTerminalColors
 
 func output(input: (String, [String: Int])) {
-    let target: Int = 4
+    let target: Int = 1
 
     var first = Int.max
     var last = Int.min
