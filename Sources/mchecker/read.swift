@@ -10,7 +10,7 @@ func read(filter: String?) -> [String: [String: Int]] {
         let genre = song.genre
         let year = song.year
 
-        if genre == filter {
+        if genre == filter ?? genre {
             let check = music[genre, default: [:]][artist, default: Int.max]
 
             if year < check {
