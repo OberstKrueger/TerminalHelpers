@@ -11,7 +11,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "random",
+            name: "okrn",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser")
             ]
