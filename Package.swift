@@ -13,7 +13,8 @@ let package = Package(
         .executableTarget(
             name: "okrn",
             dependencies: [
-                .product(name: "ArgumentParser", package: "swift-argument-parser")
+                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "OKTerminalColors", package: "OKTerminalColors")
             ]
         )
     ]

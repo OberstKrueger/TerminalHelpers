@@ -1,4 +1,5 @@
 import Foundation
+import OKTerminalColors
 
 let first: UInt
 let second: UInt
@@ -19,8 +20,8 @@ default:
 }
 
 if arguments.unique && (second - first + 1) < arguments.count {
-    print("More unique numbers requested than the range provided.")
-    print("Requested: \(arguments.count), Range: \(first)-\(second)")
+    print("ERROR: More unique numbers requested than the range provided.".color(.red))
+    print("Requested: \(arguments.count), Range: \(first)-\(second)".color(.red))
     exit(EXIT_FAILURE)
 }
 
