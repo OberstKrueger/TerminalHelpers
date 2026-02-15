@@ -1,12 +1,13 @@
 {
+  "originHash" : "78a11ee69ea4dbdc617fd041388ccfd7b33da1b9527f31f7f0b9a58b3042e9ca",
   "pins" : [
     {
       "identity" : "okterminalcolors",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/OberstKrueger/OKTerminalColors",
       "state" : {
-        "revision" : "111c00af450c6c8b493c608c57a69f9d0d6fa95c",
-        "version" : "1.0.0"
+        "revision" : "130ddba9c3318d0229c35a001a527e1bd81429e2",
+        "version" : "1.0.2"
       }
     },
     {
@@ -14,10 +15,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-argument-parser.git",
       "state" : {
-        "revision" : "41982a3656a71c768319979febd796c6fd111d5c",
-        "version" : "1.5.0"
+        "revision" : "c5d11a805e765f52ba34ec7284bd4fcd6ba68615",
+        "version" : "1.7.0"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
