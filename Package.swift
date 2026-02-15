@@ -11,13 +11,6 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "okqr",
-            dependencies: [
-                .product(name: "ArgumentParser", package: "swift-argument-parser"),
-                .product(name: "OKTerminalColors", package: "OKTerminalColors")
-            ]
-        ),
-        .executableTarget(
             name: "okrn",
             dependencies: [
                 .product(name: "ArgumentParser", package: "swift-argument-parser"),
